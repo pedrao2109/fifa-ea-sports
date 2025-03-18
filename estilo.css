@@ -1,0 +1,61 @@
+@font-face {
+    font-family: fifa;
+    src: url(./fonte.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    margin: 0;
+
+
+
+}
+.imagens{
+    margin-top: 3%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu {
+    width: 100%;
+    margin: 0%;
+    background-color: rgb(10, 9, 9);display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+} 
+.menu a{
+    display: flex;
+    list-style: none; padding: 0%;
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    width: 70%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 26pt;
+    font-family: fifa;
+}
+.cabeca img{
+    width: 100px;
+    
+}
+.cabeca{
+    background-color: blue;
+}
+
+
+
+
