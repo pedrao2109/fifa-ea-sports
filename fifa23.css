@@ -1,0 +1,41 @@
+@font-face {
+    font-family: fifa;
+    src: url(./fonte.otf);
+    font-family: fifa2;
+    src:url(./Freshman.ttf)
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    margin: 0%;
+
+    background-color: rgb(253, 253, 253);
+
+    background-image: url(./imagens/ea-play-product-conversion-gradient-jpg-2020-xl.jpg.adapt.1920w.jpg);
+
+    
+}
+
+.menu {
+    width: 100%;
+    margin: 0%;
+    background-color: rgb(0, 0, 0);display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-family: fifa;
+} 
+.menu a{
+    display: flex;
+    list-style: none; 
+    padding: 0%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
