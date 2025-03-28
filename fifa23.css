@@ -17,11 +17,14 @@ body{
 
     background-color: rgb(253, 253, 253);
 
-    background-image: url(./imagens/ea-play-product-conversion-gradient-jpg-2020-xl.jpg.adapt.1920w.jpg);
-
-    
+    background-image: url(./imagens/wwc-23-homepage-hero-med-bg-7x2-xl-jpg.jpg.adapt.crop7x2.1920w.jpg);
 }
-
+.womenbkground{
+    position: absolute;
+    width: 40%;
+    top: 100px;
+    left: 10%;
+}
 .menu {
     width: 100%;
     margin: 0%;
@@ -38,4 +41,47 @@ body{
     padding: 0%;
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+.texto p{
+    margin-top: 200px;
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 39%;
+    font-size: 177%;
+}
+.marquee {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #b99940;
+    overflow: hidden;
+    position: relative;
+    height: 100px; /* Ajuste conforme necessário */
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.marquee-content {
+    display: flex;
+    width: 40%; /* O dobro da largura para criar efeito contínuo */
+    animation: scroll-left 10s linear infinite;
+}
+
+.marquee-content img {
+    width: 50%; /* Cada imagem ocupa metade do container */
+     object-fit: cover; /* Ajusta a imagem para cobrir */
+}
+.marquee p{
+    width: 100%;
+}
+@keyframes scroll-left {
+    0% {
+         transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
