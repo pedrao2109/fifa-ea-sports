@@ -9,21 +9,26 @@
     padding: 0%;
 }
 body{
-    background-repeat: no-repeat;
-
-    background-size: cover;
-
-    margin: 0%;
-
-    background-color: rgb(253, 253, 253);
-
-    background-image: url(./imagens/wwc-23-homepage-hero-med-bg-7x2-xl-jpg.jpg.adapt.crop7x2.1920w.jpg);
+    background-color: rgb(255, 255, 255);
 }
-.womenbkground{
+nav {
+    height: 40px;
+}
+
+header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    background-color: rgb(253, 253, 253);
+    background-image: url(./imagens/wwc-23-homepage-hero-med-bg-7x2-xl-jpg.jpg.adapt.crop7x2.1920w.jpg);
+    height: 100%;
+    min-height: 600px;
+}
+header .womenbkground{
     position: absolute;
-    width: 40%;
-    top: 100px;
-    left: 10%;
+    width: 50%;
+    top: 200px;
+    left: 8%; 
 }
 .menu {
     width: 100%;
@@ -60,18 +65,19 @@ body{
     overflow: hidden;
     position: relative;
     height: 100px; /* Ajuste conforme necessário */
-    width: 100%;
+    width: 99.8%;
     display: flex;
     align-items: center;
 }
 .marquee-content {
     display: flex;
     width: 40%; /* O dobro da largura para criar efeito contínuo */
-    animation: scroll-left 10s linear infinite;
+    animation: scroll-left 15s linear infinite;
+    justify-content: center;
 }
 
 .marquee-content img {
-    width: 50%; /* Cada imagem ocupa metade do container */
+    width: 100%; /* Cada imagem ocupa metade do container */
      object-fit: cover; /* Ajusta a imagem para cobrir */
 }
 .marquee p{
@@ -84,4 +90,88 @@ body{
     100% {
         transform: translateX(-50%);
     }
+}
+.texto li{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 70px;
+}
+.texto2{
+    display: flex;
+    justify-content: center;
+}
+.texto2 li{
+    text-align: center;
+    font-size: 40px;
+    width: 60%;
+    display: flex;
+    padding-left: 400px;
+}
+.imagens{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.imagens div{    
+    text-align: center;
+}
+
+.imagens div img{
+    width: 600px;
+    border: 1px solid #bbb;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: all 0.3s ease;
+
+    /* width: 628%; */
+    /* padding-left: 154px; */
+}
+
+.imagens div img:hover{
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(2, 2, 2, 0.88);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
+}
+.tecnologia{
+    font-family: fifa;
+    text-align: center;
+    font-size: 50px; 
+    display: flex;
+    justify-content: center;
+}
+
+.tecnologia p{
+    text-align: center;
+    font-size: 50px;
+    font-family: fifa;
+    width: 100%;
+}
+.td{
+    display: flex
+    ;
+        flex-direction: column;
+        align-items: center;
+    
+}
+.tecnologia img:hover {
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(2, 2, 2, 0.88);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
+}
+.tecnologia-imagem img:not(:hover){
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(2, 2, 2, 0.88);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
+}
+.descricao p{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    font-size: xxx-large;
+    padding-left: 142px;
 }
