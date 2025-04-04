@@ -2,52 +2,52 @@
     font-family: fifa;
     src: url(./fonte.otf);
     font-family: fifa2;
-    src:url(./Freshman.ttf)
+    src: url(./Freshman.ttf);
 }
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
+body {
     background-color: rgb(255, 255, 255);
 }
 nav {
     height: 40px;
 }
-
-header{
+header {
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0%;
+    margin: 0;
     background-color: rgb(253, 253, 253);
     background-image: url(./imagens/wwc-23-homepage-hero-med-bg-7x2-xl-jpg.jpg.adapt.crop7x2.1920w.jpg);
     height: 100%;
     min-height: 600px;
 }
-header .womenbkground{
+header .womenbkground {
     position: absolute;
     width: 50%;
     top: 200px;
-    left: 8%; 
+    left: 8%;
 }
 .menu {
     width: 100%;
-    margin: 0%;
-    background-color: rgb(0, 0, 0);display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        font-family: fifa;
-} 
-.menu a{
+    margin: 0;
+    background-color: rgb(0, 0, 0);
     display: flex;
-    list-style: none; 
-    padding: 0%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: fifa;
+}
+.menu a {
+    display: flex;
+    list-style: none;
+    padding: 0;
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-.texto p{
+.texto p {
     margin-top: 200px;
     display: flex;
     text-align: center;
@@ -65,50 +65,52 @@ header .womenbkground{
     overflow: hidden;
     position: relative;
     height: 100px; /* Ajuste conforme necessário */
-    width: 99.8%;
     display: flex;
     align-items: center;
 }
 .marquee-content {
     display: flex;
-    width: 40%; /* O dobro da largura para criar efeito contínuo */
-    animation: scroll-left 15s linear infinite;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    /* Duplicar o conteúdo para criar um efeito contínuo */
+    width: 200%;
+    animation: scroll-left 20s linear infinite;
 }
-
 .marquee-content img {
-    width: 100%; /* Cada imagem ocupa metade do container */
-     object-fit: cover; /* Ajusta a imagem para cobrir */
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin: 0 10px; /* Espaçamento entre as imagens */
 }
-.marquee p{
-    width: 100%;
+.marquee-content p {
     font-size: 35px;
+    margin: 0 10px; /* Espaçamento entre o texto e as imagens */
+    white-space: nowrap;
 }
 @keyframes scroll-left {
     0% {
-         transform: translateX(0%);
+        transform: translateX(0%);
     }
     100% {
         transform: translateX(-50%);
     }
 }
-.texto li{
+.texto li {
     text-align: center;
     font-size: 50px;
     padding-top: 70px;
 }
-.texto2{
+.texto2 {
     display: flex;
     justify-content: center;
 }
-.texto2 li{
+.texto2 li {
     text-align: center;
     font-size: 40px;
     width: 60%;
     display: flex;
     padding-left: 400px;
 }
-.imagens{
+.imagens {
     display: flex;
     margin-top: 30px;
     gap: 20px;
@@ -116,105 +118,54 @@ header .womenbkground{
     width: 100%;
     justify-content: center;
 }
-
-.imagens div{    
+.imagens div {
     text-align: center;
 }
-
-.imagens div img{
+.imagens div img {
     width: 600px;
     border: 1px solid #bbb;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     transition: all 0.3s ease;
-
-    /* width: 628%; */
-    /* padding-left: 154px; */
 }
-
-.imagens div img:hover{
+.imagens div img:hover {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(2, 2, 2, 0.88);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
 }
-.tecnologia{
+.tecnologia {
     font-family: fifa;
     text-align: center;
-    font-size: 50px; 
+    font-size: 50px;
     display: flex;
     justify-content: center;
 }
-
-.tecnologia p{
+.tecnologia p {
     text-align: center;
     font-size: 50px;
     font-family: fifa;
     width: 100%;
 }
-.td{
-    display: flex
-    ;
-        flex-direction: column;
-        align-items: center;
-    
+.td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tecnologia img:hover {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(2, 2, 2, 0.88);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
 }
-.tecnologia-imagem img:not(:hover){
+.tecnologia-imagem img:not(:hover) {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(2, 2, 2, 0.88);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
 }
-.descricao p{
+.descricao p {
     width: 80%;
     height: 100%;
     text-align: center;
     font-size: xxx-large;
     padding-left: 142px;
 }
-.marquee img{
+.marquee img {
     display: flex;
     justify-content: center;
     width: 300px;
 }
-
-/* This is the containing element, 
-it needs a div within it that will 
-contain the p elements to be scrolled  */
-
-.marquee {
-    width: 100%450px; /* Width of marquee "window" must match the width of p elements*/
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-    box-shadow: 0 1px 6px #b99940;
-}
-
-.marquee > div {
-  display: table-row;
-  white-space: nowrap;
-  padding-left: 100%; 
-  animation: marquee 30s linear infinite; /* Time must be adjusted based on total width of scrolled elements*/
-}
-
-.marquee > div p {
-  width: 450px; /* Width of p elements must match the width of marquee "window"*/
-  padding-left: 50px; /* Padding determines space between scrolled elements */
-  display: table-cell; 
-  font-size: 55px;
-}
-
-/* Make it move */
-@keyframes marquee {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-}
-
-.rolagem2{
+.rolagem2 {
     align-items: end;
 }

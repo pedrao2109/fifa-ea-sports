@@ -1,0 +1,10 @@
+@font-face {
+    font-family: fifa;
+    src: url(./fonte.otf);
+    font-family: fifa2;
+    src: url(./Freshman.ttf);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }

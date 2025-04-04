@@ -1,31 +1,171 @@
-/* This is the containing element, 
-it needs a div within it that will 
-contain the p elements to be scrolled  */
-
+@font-face {
+  font-family: fifa;
+  src: url(./fonte.otf);
+  font-family: fifa2;
+  src: url(./Freshman.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+nav {
+  height: 40px;
+}
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  background-color: rgb(253, 253, 253);
+  background-image: url(./imagens/wwc-23-homepage-hero-med-bg-7x2-xl-jpg.jpg.adapt.crop7x2.1920w.jpg);
+  height: 100%;
+  min-height: 600px;
+}
+header .womenbkground {
+  position: absolute;
+  width: 50%;
+  top: 200px;
+  left: 8%;
+}
+.menu {
+  width: 100%;
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: fifa;
+}
+.menu a {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.texto p {
+  margin-top: 200px;
+  display: flex;
+  text-align: center;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 39%;
+  font-size: 177%;
+}
 .marquee {
-    width: 450px; /* Width of marquee "window" must match the width of p elements*/
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing: border-box;
-    box-shadow: 0 1px 6px #777;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: #b99940;
+  overflow: hidden;
+  position: relative;
+  height: 100px; /* Ajuste conforme necessário */
+  width: 100%; /* Ajuste conforme necessário */
+  display: flex;
+  align-items: center;
 }
-
-.marquee > div {
-  display: table-row;
+.marquee-content {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200%; /* Ajuste conforme necessário */
+}
+.marquee-content img {
+  width: 150px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  margin: 0 10px; /* Espaçamento entre as imagens */
+}
+.marquee-content p {
+  font-size: 35px;
+  margin: 0 10px; /* Espaçamento entre o texto e as imagens */
   white-space: nowrap;
-  padding-left: 100%; 
-  animation: marquee 20s linear infinite; /* Time must be adjusted based on total width of scrolled elements*/
 }
-
-.marquee > div p {
-  width: 450px; /* Width of p elements must match the width of marquee "window"*/
-  padding-left: 450px; /* Padding determines space between scrolled elements */
-  display: table-cell; 
+@keyframes scroll-left {
+  0% {
+      transform: translateX(0%);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
 }
-
-/* Make it move */
-@keyframes marquee {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
+.texto li {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 70px;
+}
+.texto2 {
+  display: flex;
+  justify-content: center;
+}
+.texto2 li {
+  text-align: center;
+  font-size: 40px;
+  width: 60%;
+  display: flex;
+  padding-left: 400px;
+}
+.imagens {
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+}
+.imagens div {
+  text-align: center;
+}
+.imagens div img {
+  width: 600px;
+  border: 1px solid #bbb;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease;
+}
+.imagens div img:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
+}
+.tecnologia {
+  font-family: fifa;
+  text-align: center;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+.tecnologia p {
+  text-align: center;
+  font-size: 50px;
+  font-family: fifa;
+  width: 100%;
+}
+.td {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tecnologia img:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
+}
+.tecnologia-imagem img:not(:hover) {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.88);
+}
+.descricao p {
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  font-size: xxx-large;
+  padding-left: 142px;
+}
+.marquee img {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
+.rolagem2 {
+  align-items: end;
 }
