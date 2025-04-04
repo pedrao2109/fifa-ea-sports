@@ -82,6 +82,7 @@ header .womenbkground{
 }
 .marquee p{
     width: 100%;
+    font-size: 35px;
 }
 @keyframes scroll-left {
     0% {
@@ -174,4 +175,46 @@ header .womenbkground{
     text-align: center;
     font-size: xxx-large;
     padding-left: 142px;
+}
+.marquee img{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+/* This is the containing element, 
+it needs a div within it that will 
+contain the p elements to be scrolled  */
+
+.marquee {
+    width: 100%450px; /* Width of marquee "window" must match the width of p elements*/
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 1px 6px #b99940;
+}
+
+.marquee > div {
+  display: table-row;
+  white-space: nowrap;
+  padding-left: 100%; 
+  animation: marquee 30s linear infinite; /* Time must be adjusted based on total width of scrolled elements*/
+}
+
+.marquee > div p {
+  width: 450px; /* Width of p elements must match the width of marquee "window"*/
+  padding-left: 50px; /* Padding determines space between scrolled elements */
+  display: table-cell; 
+  font-size: 55px;
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.rolagem2{
+    align-items: end;
 }
